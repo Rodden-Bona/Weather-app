@@ -1,0 +1,39 @@
+<!-- 
+Author: Rodden bona 
+Student ID: W0461260
+Instructor: Davis Beaudreau
+Class: Prog 2700
+Campus: NSCC Strait Area Campus
+Last Edited: March 20th, 2025
+Class Github Repository: https://github.com/Rodden-Bona/PROG-2700
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash/lodash.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Weather Dashboard</h1>
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button id="searchBtn">Search</button>
+        </div>
+        <div id="weatherInfo"></div>
+        <h2>Recent Searches</h2>
+        <ul id="searchHistory"></ul>
+        <h2>Favorites</h2>
+        <ul id="favoritesList"></ul>
+        <button id="toggleUnitBtn">Switch to Fahrenheit</button>
+    </div>
+    <script src="weatherkey.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
